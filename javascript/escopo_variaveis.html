@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>Escopo de Funções</title>
+
+    <script>
+
+        // existem 3 escopos: global, função e o bloco
+        // o global se refere ao script como um todo
+        // o função se refere ao conteudo dentro de um bloco de função
+        // e de bloco se refere aos dentro de comandos ex: comondos if e comando switch
+        // escopos de bloco e de função visualizam variáveis do escopo global
+
+        var serie = 'Friends'
+
+        //escopo de bloco(if)
+        if (true) {
+            var serie2 = 'Game of Thrones' //essa variável sofre elevação do escopo de bloco (if) 
+            document.write(serie)// para ser usada no escopo global
+        }
+
+        document.write(serie2)
+        document.write('<br>')
+
+        function x() {
+            var serie3 = 'The Walking Dead'//declarar variáveis dentro da função, ela não sofrerá elevação
+            document.write(serie)// para o escobo global
+            document.write(serie2)//se exixtir uma variável de um escopo de bloco dentro de uma função,
+        }                         // a variável de bloco sofre elevação para o escopo da função.
+
+        x()
+        document.write('<br>')
+        document.write(serie3)
+         
+
+    </script>
+
+
+</head>
+<body>
+    
+</body>
+</html>

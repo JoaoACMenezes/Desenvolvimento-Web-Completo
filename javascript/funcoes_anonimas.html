@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções Anonimas</title>
+
+    <script>
+
+    //funções anonimas são funções se nome definidos ( funtion() )
+    //podemos associar uma função a uma variável ( var ) esso se chama wapper.
+    // é como se "embrulhasse" nossa função em um variavel referente a ela.
+    //    function(nome) {
+    //        document.write('Ola ' + nome + ', tudo bem?')
+    // } essa função não tem como ser chamada.
+        //mas se fizermos o wapper dela dentro de uma variável.
+        
+        var exibirSaudacao = function(nome) {
+            document.write('Ola ' + nome + ', tudo bem?')
+        }
+
+        exibirSaudacao('Jorge')
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>
